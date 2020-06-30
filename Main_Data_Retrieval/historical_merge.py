@@ -1,7 +1,7 @@
 import os
 import csv
 
-historical_in_csv = os.path.join("cleaned_historical.csv")
+historical_in_csv = os.path.join("cleaned_historical_in.csv")
 
 # Lists to store data
 location = []
@@ -41,7 +41,7 @@ with open(historical_in_csv) as csvfile:
 
 merged_clean = zip(location, city, utc, parameter, value, latitude, longitude)
 
-output_file = os.path.join("merged_clean.csv")
+output_file = os.path.join("clean_historical_data.csv")
 
 with open(output_file, "w") as datafile:
     writer = csv.writer(datafile)

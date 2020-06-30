@@ -41,7 +41,7 @@ with open(historical_in_csv) as csvfile:
 
 cleaned_historical = zip(location, city, utc, parameter, value, unit, latitude, longitude)
 
-output_file = os.path.join("cleaned_historical.csv")
+output_file = os.path.join("cleaned_historical_in.csv")
 
 with open(output_file, "w") as datafile:
     writer = csv.writer(datafile)
